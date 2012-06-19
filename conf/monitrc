@@ -115,7 +115,7 @@ set idfile /app/tmp/.monit.id
 #
 set httpd port HEROKU_PORT
     allow monit:monit
-    allow readonly:readonly read-only
+    allow onlyread:onlyread read-only
 
 ###############################################################################
 ## Services
