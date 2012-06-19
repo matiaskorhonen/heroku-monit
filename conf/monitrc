@@ -113,9 +113,9 @@ set idfile /app/tmp/.monit.id
 ## services monitored and manage services from a web interface. See the
 ## Monit Wiki if you want to enable SSL for the web server. 
 #
-set httpd port HEROKU_PORT
-    allow monit:monit
-    allow localhost
+set httpd port HEROKU_PORT # and
+    # use address 0.0.0.0
+    # allow monit:monit
 
 ###############################################################################
 ## Services
