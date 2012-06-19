@@ -114,6 +114,8 @@ set alert NOTIFY_EMAIL only on { timeout }  # receive just service-
 set httpd port HEROKU_PORT
     allow HTTP_USER:HTTP_PASSWD
 
+check system Heroku
+
 ###############################################################################
 ## Web sites
 ###############################################################################
@@ -132,7 +134,6 @@ check host matiaskorhonen.fi with address matiaskorhonen.fi
 #    if failed url http://user:password@www.foo.bar:8080/?querystring
 #       and content == 'action="j_security_check"'
 #       then alert
-
 
 ###############################################################################
 ## Includes
