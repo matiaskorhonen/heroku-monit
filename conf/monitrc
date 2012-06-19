@@ -113,7 +113,7 @@ set daemon  60              # check services at 1-minute intervals
 ## services monitored and manage services from a web interface. See the
 ## Monit Wiki if you want to enable SSL for the web server. 
 #
-set httpd port ${PORT}
+set httpd port HEROKU_PORT
     allow monit:monit
     allow localhost
 

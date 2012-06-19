@@ -1,1 +1,1 @@
-web: ./bin/monit -c ./conf/monitrc
+web: sed -i -e "s/HEROKU_PORT/$PORT/g" ./conf/monitrc && ./bin/monit -c ./conf/monitrc
