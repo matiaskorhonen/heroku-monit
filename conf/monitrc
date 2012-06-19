@@ -114,7 +114,7 @@ set alert NOTIFY_EMAIL only on { timeout }  # receive just service-
 set httpd port HEROKU_PORT
     allow HTTP_USER:HTTP_PASSWD
 
-check system Heroku
+check system SYSTEM_NAME
 
 ###############################################################################
 ## Web sites
