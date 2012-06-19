@@ -118,6 +118,14 @@ set httpd port HEROKU_PORT
     allow onlyread:onlyread read-only
 
 ###############################################################################
+## Web sites
+###############################################################################
+
+check host matiaskorhonen.fi with address matiaskorhonen.fi
+    if failed url http://matiaskorhonen.fi/
+    timeout 15 seconds for 4 cycles then alert
+
+###############################################################################
 ## Services
 ###############################################################################
 ##
@@ -127,8 +135,8 @@ set httpd port HEROKU_PORT
 #    if failed url http://user:password@www.foo.bar:8080/?querystring
 #       and content == 'action="j_security_check"'
 #       then alert
-#
-#
+
+
 ###############################################################################
 ## Includes
 ###############################################################################
