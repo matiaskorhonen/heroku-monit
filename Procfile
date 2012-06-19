@@ -1,1 +1,1 @@
-web: .bin/monit -c ./conf/monitrc
+web: ./bin/monit -c ./conf/monitrc
