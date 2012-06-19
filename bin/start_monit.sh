@@ -10,11 +10,8 @@ sed -i -e "s/HTTP_PASSWD/$HTTP_PASSWD/g" ./conf/monitrc
 sed -i -e "s/NOTIFY_EMAIL/$NOTIFY_EMAIL/g" ./conf/monitrc
 
 # Set the system name
-if [ ! -n "$SYSTEM_NAME" ]; then
-  sed -i -e "s/NOTIFY_EMAIL/Heroku/g" ./conf/monitrc
-else
-  sed -i -e "s/NOTIFY_EMAIL/$SYSTEM_NAME/g" ./conf/monitrc
-fi
+SYSTEM_NAME=${1:-Heroku}
+sed -i -e "s/SYSTEM_NAME/$SYSTEM_NAME/g" ./conf/monitrc
 
 # Set the SendGrid credentials
 sed -i -e "s/SENDGRID_USERNAME/$SENDGRID_USERNAME/g" ./conf/monitrc
