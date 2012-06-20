@@ -113,6 +113,7 @@ set alert NOTIFY_EMAIL only on { timeout }  # receive just service-
 #
 set httpd port HEROKU_PORT
     allow HTTP_USER:HTTP_PASSWD
+    allow READ_USER:READ_PASSWD read-only
 
 check system SYSTEM_NAME
 

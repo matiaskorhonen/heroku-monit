@@ -6,6 +6,10 @@ sed -i -e "s/HEROKU_PORT/$PORT/g" ./conf/monitrc
 sed -i -e "s/HTTP_USER/$HTTP_USER/g" ./conf/monitrc
 sed -i -e "s/HTTP_PASSWD/$HTTP_PASSWD/g" ./conf/monitrc
 
+# Set the HTTP Basic auth read-only user credentials
+sed -i -e "s/READ_USER/$READ_USER/g" ./conf/monitrc
+sed -i -e "s/READ_PASSWD/$READ_PASSWD/g" ./conf/monitrc
+
 # Set which email to notify on alert
 sed -i -e "s/NOTIFY_EMAIL/$NOTIFY_EMAIL/g" ./conf/monitrc
 
