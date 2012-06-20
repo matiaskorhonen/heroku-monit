@@ -124,6 +124,10 @@ check host matiaskorhonen.fi with address matiaskorhonen.fi
     if failed url http://matiaskorhonen.fi/
     timeout 15 seconds for 4 cycles then alert
 
+check host mappple.matiaskorhonen.fi with address mappple.matiaskorhonen.fi
+    if failed url http://mappple.matiaskorhonen.fi/
+    timeout 15 seconds for 4 cycles then alert
+
 ###############################################################################
 ## Services
 ###############################################################################
