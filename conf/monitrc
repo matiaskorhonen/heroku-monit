@@ -47,7 +47,7 @@ set idfile /app/tmp/.monit.id
 # will use the second mail server in the list and so on. By default Monit uses 
 # port 25 - it is possible to override this with the PORT option.
 set mailserver smtp.sendgrid.net
-  username "SENDGRID_USERNAME" password "SENDGRID_PASSWORD"
+  username "${SENDGRID_USERNAME}" password "${SENDGRID_PASSWORD}"
   with timeout 30 seconds
 
 ## By default Monit will drop alert events if no mail servers are available. 
@@ -103,7 +103,7 @@ set mailserver smtp.sendgrid.net
 ## events by using a filter as in the second example below. 
 #
 # set alert NOTIFY_EMAIL                       # receive all alerts
-set alert NOTIFY_EMAIL only on { timeout }  # receive just service-
+set alert ${NOTIFY_EMAIL} only on { timeout }  # receive just service-
 #                                                # timeout alert
 #
 #
@@ -111,11 +111,11 @@ set alert NOTIFY_EMAIL only on { timeout }  # receive just service-
 ## services monitored and manage services from a web interface. See the
 ## Monit Wiki if you want to enable SSL for the web server. 
 #
-set httpd port HEROKU_PORT
-    allow HTTP_USER:HTTP_PASSWD
-    allow READ_USER:READ_PASSWD read-only
+set httpd port ${PORT}
+    allow ${HTTP_USER}:${HTTP_PASSWD}
+    allow ${READ_USER}:${READ_PASSWD} read-only
 
-check system SYSTEM_NAME
+check system ${SYSTEM_NAME}
 
 ###############################################################################
 ## Web sites
