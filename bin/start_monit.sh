@@ -21,4 +21,4 @@ sed -i -e "s/SYSTEM_NAME/$SYSTEM_NAME/g" ./conf/monitrc
 sed -i -e "s/SENDGRID_USERNAME/$SENDGRID_USERNAME/g" ./conf/monitrc
 sed -i -e "s/SENDGRID_PASSWORD/$SENDGRID_PASSWORD/g" ./conf/monitrc
 
-./bin/monit -c ./conf/monitrc -p ./tmp/.monit.pid -s ./tmp/.monit.state -I
+vendor/monit/bin/monit -c ./conf/monitrc -p ./tmp/.monit.pid -s ./tmp/.monit.state -I
