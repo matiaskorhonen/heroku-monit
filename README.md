@@ -1,6 +1,6 @@
 # Monit on Heroku
 
-Run monit on Heroku.
+Monit on Heroku using the [Monit Buildpack](https://github.com/k33l0r/monit-buildpack).
 
 ## License
 
