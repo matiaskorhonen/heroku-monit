@@ -1,4 +1,4 @@
-# Monit on Heroku (WIP)
+# Monit on Heroku
 
 Run monit on Heroku.
 
