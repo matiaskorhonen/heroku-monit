@@ -65,5 +65,4 @@ check system ${SYSTEM_NAME}
 ##
 ## It is possible to include additional configuration parts from other files or
 ## directories.
-#
-# include /app/conf.d/*
+include /app/conf.d/*
