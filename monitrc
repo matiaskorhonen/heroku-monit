@@ -41,9 +41,7 @@ set mailserver smtp.sendgrid.net
 set alert ${NOTIFY_EMAIL} only on { timeout }
 
 ## Monit has an embedded web server which can be used to view status of 
-## services monitored and manage services from a web interface. See the
-## Monit Wiki if you want to enable SSL for the web server. 
-#
+## services monitored and manage services from a web interface.
 set httpd port ${PORT}
     allow ${HTTP_USER}:${HTTP_PASSWD}
     allow ${READ_USER}:${READ_PASSWD} read-only
@@ -81,4 +79,3 @@ check host mappple.matiaskorhonen.fi with address mappple.matiaskorhonen.fi
 ## directories.
 #
 # include /app/conf.d/*
-#
