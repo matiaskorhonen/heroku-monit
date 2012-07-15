@@ -1,1 +1,0 @@
-web: ./bin/start_monit.sh
