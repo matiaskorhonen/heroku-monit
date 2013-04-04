@@ -9,3 +9,7 @@ check host matiaskorhonen.fi with address matiaskorhonen.fi
 check host mappple.matiaskorhonen.fi with address mappple.matiaskorhonen.fi
     if failed url http://mappple.matiaskorhonen.fi/
     timeout 15 seconds for 4 cycles then alert
+
+check host github-hires.herokuapp.com with address github-hires.herokuapp.com
+    if failed url http://github-hires.herokuapp.com/
+    timeout 15 seconds for 4 cycles then alert
