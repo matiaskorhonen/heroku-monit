@@ -17,3 +17,7 @@ check host github-hires.herokuapp.com with address github-hires.herokuapp.com
 check host snippets.matiaskorhonen.fi with address snippets.matiaskorhonen.fi
     if failed url http://snippets.matiaskorhonen.fi/
     timeout 15 seconds for 4 cycles then alert
+
+check host photos.matiaskorhonen.fi with address photos.matiaskorhonen.fi
+    if failed url http://photos.matiaskorhonen.fi/
+    timeout 15 seconds for 4 cycles then alert
