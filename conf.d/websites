@@ -25,3 +25,7 @@ check host photos.matiaskorhonen.fi with address photos.matiaskorhonen.fi
 check host piranhas.co with address piranhas.co
     if failed url http://piranhas.co/
     timeout 15 seconds for 4 cycles then alert
+
+check host Readability with address piranhas.co
+    if failed url http://floating-cliffs-8436.herokuapp.com/
+    timeout 15 seconds for 4 cycles then alert
