@@ -22,7 +22,7 @@ check host photos.matiaskorhonen.fi with address photos.matiaskorhonen.fi
     if failed url http://photos.matiaskorhonen.fi/
     timeout 15 seconds for 4 cycles then alert
 
-check host Books with address books.matiaskorhonen.fi
+check host books.matiaskorhonen.fi with address books.matiaskorhonen.fi
     if failed url http://books.matiaskorhonen.fi/
     timeout 15 seconds for 4 cycles then alert
 
@@ -30,7 +30,7 @@ check host piranhas.co with address piranhas.co
     if failed url http://piranhas.co/
     timeout 15 seconds for 4 cycles then alert
 
-check host Readability-Bookmarklet with address floating-cliffs-8436.herokuapp.com
+check host readability-bookmarklet with address floating-cliffs-8436.herokuapp.com
     if failed url http://floating-cliffs-8436.herokuapp.com/
     timeout 15 seconds for 4 cycles then alert
 
