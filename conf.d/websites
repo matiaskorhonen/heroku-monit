@@ -23,7 +23,9 @@ check host photos.matiaskorhonen.fi with address photos.matiaskorhonen.fi
     timeout 15 seconds for 4 cycles then alert
 
 check host books.matiaskorhonen.fi with address books.matiaskorhonen.fi
-    if failed url http://books.matiaskorhonen.fi/
+    if failed url http://books.matiaskorhonen.fi/read
+    timeout 15 seconds for 4 cycles then alert
+    if failed url http://books.matiaskorhonen.fi/to_read
     timeout 15 seconds for 4 cycles then alert
 
 check host piranhas.co with address piranhas.co
