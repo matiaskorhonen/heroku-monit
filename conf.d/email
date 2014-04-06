@@ -4,7 +4,8 @@
 # port 25 - it is possible to override this with the PORT option.
 set mailserver smtp.mandrillapp.com port 587
   username "${MANDRILL_USERNAME}" password "${MANDRILL_APIKEY}"
-  using SSLAUTO, with timeout 30 seconds using hostname heroku.com
+  using TLSV12 with timeout 30 seconds
+  using hostname heroku.com
 
 ## You can set alert recipients whom will receive alerts if/when a 
 ## service defined in this file has errors. Alerts may be restricted on 
