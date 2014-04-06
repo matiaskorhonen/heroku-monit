@@ -29,10 +29,9 @@ check host books.matiaskorhonen.fi with address books.matiaskorhonen.fi
     timeout 15 seconds for 4 cycles then alert
 
 check host piranhas.co with address piranhas.co
-    if failed url http://piranhas.co/
+    if failed url http://www.piranhas.co/
     timeout 15 seconds for 4 cycles then alert
 
 check host readability-bookmarklet with address floating-cliffs-8436.herokuapp.com
     if failed url http://floating-cliffs-8436.herokuapp.com/
     timeout 15 seconds for 4 cycles then alert
-
