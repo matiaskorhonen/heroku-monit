@@ -10,5 +10,5 @@ set mailserver smtp.mandrillapp.com port 587
 ## service defined in this file has errors. Alerts may be restricted on 
 ## events by using a filter as in the second example below. 
 #
-# set alert NOTIFY_EMAIL                       # receive all alerts
-set alert ${NOTIFY_EMAIL} only on { timeout }
+set alert ${NOTIFY_EMAIL}                       # receive all alerts
+# set alert ${NOTIFY_EMAIL} only on { timeout }
