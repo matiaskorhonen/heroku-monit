@@ -4,7 +4,7 @@
 # port 25 - it is possible to override this with the PORT option.
 set mailserver smtp.mandrillapp.com port 587
   username "${MANDRILL_USERNAME}" password "${MANDRILL_APIKEY}"
-  using TLSV12 with timeout 30 seconds
+  using SSLAUTO with timeout 30 seconds
   using hostname heroku.com
 
 set mail-format { from: ${FROM_EMAIL} }
