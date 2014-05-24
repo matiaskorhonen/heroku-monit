@@ -7,7 +7,7 @@ set mailserver smtp.mandrillapp.com port 465
   using SSLAUTO with timeout 30 seconds
   using hostname heroku.com
 
-set mail-format { from: ${FROM_EMAIL} }
+set mail-format { from: ${FROM_EMAIL} } but not on { INSTANCE }
 
 ## You can set alert recipients whom will receive alerts if/when a 
 ## service defined in this file has errors. Alerts may be restricted on 
